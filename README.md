@@ -2,20 +2,20 @@
 
 ## 1 Lecture -  Introduction in HTML
 
-- Task 1
+- Task 1 - Formulas for the properties of degrees
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/1-lecture-homework/task1.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/1-lecture-homework/task1.html) 
-- Task 2
+- Task 2 -  Quotes
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/1-lecture-homework/task2.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/1-lecture-homework/task2.html)
-- Task 3
+- Task 3 - Сontents
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/1-lecture-homework/task3.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/1-lecture-homework/task3.html)
 
 ## 2 Lecture -  Work with graphic
 
-- Task 1
+- Task 1 - Anchor to top of page.
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/2-lecture-homework/task1.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/2-lecture-homework/task1.html)
-- Task 2
+- Task 2 - Background without scaling
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/2-lecture-homework/task2.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/2-lecture-homework/task2.html)
-- Task 3
+- Task 3 - Background with scaling
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/2-lecture-homework/task3.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/2-lecture-homework/task3.html)
 
 ## 3 Lecture - Div, selectors, banner
