@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with captcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" class="form__body">
+            <label for="name">Твоє ім'я</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Твій email</label>
+            <input type="email" name="email" id="email">
+            <label for="topic">Тема повідомлення</label>
+            <select name="topic" id="topic">
+                <option disabled selected hidden>-- оберіть тему --</option>
+                <option value="1">Тема 1</option>
+                <option value="2">Тема 2</option>
+                <option value="3">Тема 3</option>
+                <option value="4">Тема 4</option>
+            </select>
+            <label class="text" for="text">Текст *</label>
+            <textarea name="text" id="text"></textarea>
+            <label for="captcha">Захист від спаму *</label>
+            <input class="captcha__input" type="text" id="captcha">
+            <img src="capcha.jpg" alt="captcha" class="captcha__img">
+            <a href="" class="change__link">поміняти картинку</a>
+            <input class="submit" type="submit" value="Відправити">
+        </form>
+    </div>
+
+</body>
+
+</html>
