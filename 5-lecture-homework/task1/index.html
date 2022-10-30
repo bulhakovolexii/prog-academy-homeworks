@@ -13,9 +13,9 @@
     <div class="wrapper">
         <form action="" class="form__body">
             <label for="name">Твоє ім'я</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" value="Олексій Булгаков">
             <label for="email">Твій email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" value="olexii.bulhakov@outlook.com">
             <label for="topic">Тема повідомлення</label>
             <select name="topic" id="topic">
                 <option disabled selected hidden>-- оберіть тему --</option>
@@ -25,9 +25,9 @@
                 <option value="4">Тема 4</option>
             </select>
             <label class="text" for="text">Текст *</label>
-            <textarea name="text" id="text"></textarea>
+            <textarea name="text" id="text" required></textarea>
             <label for="captcha">Захист від спаму *</label>
-            <input class="captcha__input" type="text" id="captcha">
+            <input class="captcha__input" type="text" id="captcha" required>
             <img src="capcha.jpg" alt="captcha" class="captcha__img">
             <a href="" class="change__link">поміняти картинку</a>
             <input class="submit" type="submit" value="Відправити">

@@ -21,7 +21,7 @@ body {
     padding: 12px 24px;
     box-sizing: border-box;
     background-color: white;
-    border: 2px solid blue;
+    border: 2px solid #8ab2ff;
     outline: 2px solid white;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -38,13 +38,13 @@ label {
 input {
     grid-column-start: 1;
     grid-column-end: 3;
-    border: 1px solid blue;
+    border: 1px solid #8ab2ff;
 }
 
 select {
     grid-column-start: 1;
     grid-column-end: 3;
-    border: 1px solid blue;
+    border: 1px solid #8ab2ff;
     background-color: white;
 }
 
@@ -54,7 +54,7 @@ textarea {
     grid-row-start: 4;
     grid-row-end: 7;
     resize: none;
-    border: 1px solid blue;
+    border: 1px solid #8ab2ff;
 }
 
 .text {
@@ -74,7 +74,7 @@ textarea {
     grid-row-start: 7;
     grid-row-end: 9;
     align-self: auto;
-    border: 1px solid blue;
+    border: 1px solid #8ab2ff;
     width: 100%;
 }
 
