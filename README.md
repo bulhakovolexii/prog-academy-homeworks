@@ -29,3 +29,16 @@
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/4-lecture-homework/task1/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/4-lecture-homework/task1/)
 - Task 2. Making a banner with blocks and icons
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/4-lecture-homework/task2/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/4-lecture-homework/task2/)
+
+  ## 5 Forms
+
+- Task 1. Make a form with captcha
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task1/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task1/)
+- Task 2. Make up the dark form
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task2/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task2/)
+- Task 3. Make up a form with custom focus
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task3/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task3/)
+- Task 4. Make up a form with icons
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task4/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task4/)
+- Task 5. Finish live coding from lecture 5
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task5/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task5/)
