@@ -30,7 +30,7 @@
 - Task 2. Making a banner with blocks and icons
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/4-lecture-homework/task2/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/4-lecture-homework/task2/)
 
-  ## 5 Lecture - Forms
+## 5 Lecture - Forms
 
 - Task 1. Make a form with captcha
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task1/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task1/)
