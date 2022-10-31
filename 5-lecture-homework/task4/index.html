@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with icons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../libs/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <div class="form__header">
+                <h1>Login form</h1>
+            </div>
+            <div class="form__body">
+                <label>E-mail
+                    <input type="email" name="email">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <label>
+                    Password
+                    <input type="password" name="password">
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+                <a href="#">Forgot password?</a>
+                <label class="checkbox">
+                    <input type="checkbox" name="keep-logged" checked>
+                    Keep me logged in
+                </label>
+            </div>
+            <div class="form__footer">
+                <button>Register</button>
+                <input type="submit" value="Log in">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

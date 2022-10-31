@@ -48,4 +48,7 @@ input[type="submit"] {
 
 input:focus {
     box-shadow: 0 0 10px blue;
+    outline: none;
+    border-style: solid;
+    border-radius: 4px;
 }
