@@ -42,3 +42,9 @@
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task4/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task4/)
 - Task 5. Finish live coding from lecture 5
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/5-lecture-homework/task5/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/5-lecture-homework/task5/)
+
+  ## 4 Lecture - Transition, animation, hover, animate.css
+
+- Task 1. Make up a web page from a mockup
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/6-lecture-homework/index.html) | [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/6-lecture-homework/)
+  
