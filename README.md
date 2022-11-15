@@ -45,4 +45,12 @@
 
 - Task 1. Make up a web page from a mockup
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/6-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/6-lecture-homework/)
-  
+
+## 7 Lecture - Forms
+
+- Task 1. Make a simple navbar
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task1/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task1/)
+- Task 2. Make a simple menu
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task2/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task2/)
+- Task 3. Make a navbar with collapsible submenu
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task3/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task3/)
