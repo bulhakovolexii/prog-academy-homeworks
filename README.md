@@ -46,7 +46,7 @@
 - Task 1. Make up a web page from a mockup
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/6-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/6-lecture-homework/)
 
-## 7 Lecture - Forms
+## 7 Practice
 
 - Task 1. Make a simple navbar
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task1/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task1/)
