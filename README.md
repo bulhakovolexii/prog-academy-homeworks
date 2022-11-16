@@ -57,5 +57,5 @@
 
 ## 8 Tables, pseudo-classes, pseudo-elements, rem em, fr, introduction to Grid layout
 
-- Task 1. Make a simple navbar
+- Task 1. Reproduce site section layout using GRID Layout
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/8-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/8-lecture-homework/)
