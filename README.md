@@ -54,3 +54,8 @@
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task2/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task2/)
 - Task 3. Make a navbar with collapsible submenu
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task3/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task3/)
+
+## 8 Tables, pseudo-classes, pseudo-elements, rem em, fr, introduction to Grid layout
+
+- Task 1. Make a simple navbar
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/8-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/8-lecture-homework/)

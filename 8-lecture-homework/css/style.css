@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Gilroy", sans-serif;
+    color: #81859c;
+}
+
+a {
+    color: #81859c;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+a:hover {
+    opacity: 0.6;
+    transition: 200ms;
+}
+
+.wrapper {
+    height: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.departments {
+    width: 100%;
+    background-color: white;
+    padding: 80px 0;
+}
+
+.departments__body {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.departments__title {
+    font-family: 'Merriweather';
+    color: #003a5d;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0 0 24px 0;
+}
+
+.cities {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+    padding-top: 50px;
+}
+
+.city__card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: start;
+}
+
+.city__img {
+    width: 92px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.city__name {
+    color: #003a5d;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    margin: 5px 0;
+}
+
+.city__address {
+    margin: 5px 0;
+}
