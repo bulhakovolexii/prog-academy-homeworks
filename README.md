@@ -59,3 +59,8 @@
 
 - Task 1. Reproduce site section layout using GRID Layout
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/8-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/8-lecture-homework/)
+
+## 8.1 Practice 
+
+- Task 1. Make up a web page from a mockup
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/8.1-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/8.1-lecture-homework/)
