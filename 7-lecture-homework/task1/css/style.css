@@ -35,6 +35,7 @@
 
 .navbar__links li {
     padding: 4px;
+    white-space: nowrap;
 }
 
 .navbar__links hr {
@@ -53,6 +54,7 @@
     display: flex;
     gap: 36px;
     list-style: none;
+    white-space: nowrap;
 }
 
 .navbar__login i {
@@ -77,4 +79,35 @@
 main {
     margin: 67px auto;
     max-width: 1200px;
+}
+
+@media screen and (max-width: 865px) {
+    .navbar__links {
+        width: 100%;
+    }
+
+    .navbar__menu {
+        gap: 5px;
+    }
+
+    .navbar__login {
+        gap: 5px;
+    }
+
+    .navbar__lang {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        font-size: 0.7em;
+    }
 }

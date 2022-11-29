@@ -41,6 +41,8 @@ body {
     justify-content: center;
     border-right: 1px solid lightgray;
     text-transform: uppercase;
+    text-align: center;
+    padding: 0 5px;
 }
 
 .navbar__item i {
@@ -93,4 +95,31 @@ body {
 main {
     flex: 1 1 auto;
     margin-top: 68px;
+}
+
+@media screen and (max-width: 560px) {
+    .navbar__item a {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .navbar__items {
+        height: 140px;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+    }
+
+    .collapsible {
+        position: static;
+    }
+
+    .navbar__dropdown {
+        top: 140px;
+    }
+
+    main {
+        margin-top: 120px;
+    }
 }

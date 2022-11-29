@@ -90,3 +90,19 @@ a:hover {
 .city__address {
     margin: 5px 0;
 }
+
+@media screen and (max-width: 902px) {
+    .wrapper {
+        height: auto;
+    }
+
+    .cities {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cities {
+        grid-template: repeat(6, 1fr) / 1fr;
+    }
+}

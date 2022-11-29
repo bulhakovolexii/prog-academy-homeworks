@@ -17,7 +17,7 @@ body {
 
 .form__body {
     height: 352px;
-    width: 566px;
+    max-width: 566px;
     padding: 12px 24px;
     box-sizing: border-box;
     background-color: white;
@@ -33,6 +33,7 @@ label {
     grid-column-start: 0;
     grid-column-end: 1;
     justify-self: end;
+    text-align: end;
 }
 
 input {
@@ -81,6 +82,7 @@ textarea {
 .change__link {
     grid-column-start: 4;
     grid-column-end: 6;
+    display: inline-block;
 }
 
 .submit {
@@ -88,4 +90,45 @@ textarea {
     grid-column-end: 2;
     grid-row-start: 9;
     grid-row-end: 10;
+}
+
+@media (max-width: 500px) {
+    .captcha__img {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+
+    .change__link {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+
+    .submit {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    }
+}
+
+@media (max-width: 400px) {
+    .captcha__img {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+
+    .captcha__input {
+        grid-column-start: 1;
+        width: 100%;
+    }
+
+    .form__body {
+        padding: 8px 8px;
+    }
 }

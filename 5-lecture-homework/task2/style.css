@@ -10,16 +10,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .form__body {
+    flex: 0 1 350px;
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 24px;
     gap: 12px;
+    box-sizing: border-box;
 }
 
 .form__header {
@@ -27,14 +28,15 @@ body {
 }
 
 label {
+    width: 100%;
     font-size: 12px;
     line-height: 1.5;
 }
 
 input {
-    display: block;
-    width: 350px;
     height: 2em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {

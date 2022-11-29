@@ -9,15 +9,15 @@ body {
     height: 100%;
     background-color: #50c7c3;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 form {
-    min-width: 500px;
+    max-width: 500px;
     background-color: white;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
 }
 

@@ -100,3 +100,21 @@ html {
     font-size: 2em;
     color: #999379;
 }
+
+@media screen and (max-width: 1000px) {
+    .main__content {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .contacts__link {
+        font-size: 0.7em;
+    }
+
+}

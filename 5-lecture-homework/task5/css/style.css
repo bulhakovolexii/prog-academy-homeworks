@@ -40,7 +40,7 @@
 
 .form__item {
 	display: flex;
-	margin: 25px 0 25px 15px;
+	margin: 25px 25px 25px 15px;
 	justify-content: space-between;
 }
 
