@@ -7,8 +7,6 @@ body {
     background-color: #f5f5f5;
 }
 
-.wrapper {}
-
 /* header */
 
 header {
@@ -28,6 +26,36 @@ header {
 .header__logo {
     height: 27px;
     width: auto;
+}
+
+.popup__check {
+    position: absolute;
+    appearance: none;
+}
+
+.popup__btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    display: none;
+}
+
+.popup__btn:hover,
+.popup__check:focus~.popup__btn {
+    outline: 2px solid #f5f5f5;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.popup__line {
+    height: 3px;
+    width: 19px;
+    background-color: #f5f5f5;
+}
+
+.popup__check:checked~.header__links {
+    display: flex;
 }
 
 .header__links {
@@ -250,7 +278,22 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    .popup__btn {
+        display: flex;
+    }
+
     .header__links {
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        background-color: #000;
+        padding: 15px 25px;
         display: none;
     }
 
