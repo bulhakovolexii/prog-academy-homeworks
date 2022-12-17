@@ -86,7 +86,7 @@ body {
 	display: block;
 	position: absolute;
 	background-color: #353535;
-	top: 72px;
+	top: 100%;
 	right: 0;
 	text-align: center;
 	border-end-end-radius: 5px;
