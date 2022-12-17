@@ -323,13 +323,13 @@ body {
 
 /* responsibility */
 
-@media (width >=675px) {
+@media screen and (min-width: 675px) {
 	.burger__btn {
 		display: none;
 	}
 }
 
-@media (width < 675px) {
+@media screen and (max-width: 674px) {
 	.header__menu ul {
 		display: none;
 	}
@@ -350,7 +350,7 @@ body {
 	}
 }
 
-@media (width < 430px) {
+@media screen and (max-width: 430px) {
 	.header__logo {
 		font-size: 24px;
 	}
