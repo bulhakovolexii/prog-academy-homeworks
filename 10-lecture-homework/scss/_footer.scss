@@ -1,0 +1,95 @@
+.footer {
+    padding: 35px 120px;
+    display: flex;
+    justify-content: center;
+    font-family: $text-font;
+
+    .footer__container {
+        flex-basis: 1440px;
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+
+        .footer__info {
+            display: flex;
+
+            .footer__logo {
+                flex-basis: 2 / 12 * 100%;
+
+                img {
+                    width: 45px;
+                    height: 16px;
+                }
+            }
+
+            .footer__text {
+                flex-basis: 8 / 12 * 100%;
+                display: flex;
+                gap: 30px;
+
+                h4 {
+                    margin: 0 0 16px 0;
+                    font-family: $titles-font;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+
+                p {
+                    margin: 0;
+                    line-height: 27px;
+                }
+            }
+
+            .footer__links {
+                flex-grow: 1;
+                display: flex;
+                justify-content: end;
+
+                ul {
+                    @extend %ul-reset;
+                    line-height: 16px;
+                    font-size: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    a {
+                        @extend %a-reset;
+                        font-size: 15px;
+                        line-height: 16px;
+                        font-family: $titles-font;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer__credits {
+            display: flex;
+            color: $gray3;
+
+            span {
+                flex-basis: 4 / 12 * 100%;
+            }
+
+
+            .credits__links {
+                flex-basis: 7 / 12 * 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            a {
+                @extend %a-reset;
+                color: inherit;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

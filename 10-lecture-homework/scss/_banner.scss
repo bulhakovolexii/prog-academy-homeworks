@@ -1,0 +1,54 @@
+.banner {
+    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background-color: $bg-color;
+
+    .banner__container {
+        flex-basis: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .banner__info {
+            flex-basis: 585px;
+            font-family: $titles-font;
+
+            .banner__title {
+                font-size: 64px;
+                line-height: 72px;
+                margin: 0 0 20px 0;
+                color: $gray1;
+            }
+
+            .banner__text {
+                margin: 0 0 48px 0;
+                font-family: $text-font;
+                color: $gray2;
+            }
+
+            .banner__btn {
+                box-sizing: border-box;
+                background-color: #6248FF;
+                color: white;
+                font-family: inherit;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 60px;
+                padding: 20px 64px;
+                font-size: 16px;
+                line-height: 14px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $violet-hover;
+                }
+
+                &:active {
+                    background-color: $violet-pressed;
+                }
+            }
+        }
+    }
+}
