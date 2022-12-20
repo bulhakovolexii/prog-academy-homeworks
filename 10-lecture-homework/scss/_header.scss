@@ -7,7 +7,7 @@
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     color: $gray1;
 
     .header_logo {
@@ -90,6 +90,63 @@
 
         &:active {
             background-color: $violet-pressed;
+        }
+    }
+
+    .header__burger {
+        box-sizing: border-box;
+        height: 24px;
+        width: 24px;
+        padding: 6px 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        .burger__line {
+            background-color: $gray1;
+            height: 2px;
+            width: 18px;
+            border-radius: 2px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1230px) {
+    .header {
+        .header__burger {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1229px) {
+
+    .header {
+        padding: 0 40px;
+
+        .header_logo {
+            flex-grow: 1;
+        }
+    }
+
+    .header__menu,
+    .header__lang {
+        display: none;
+    }
+
+    .header__btn {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .header {
+        padding: 0 20px;
+
+        .header__btn {
+            display: none;
         }
     }
 }

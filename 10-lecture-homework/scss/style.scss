@@ -15,9 +15,30 @@ body {
 
     .main {
         flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 140px;
         @import 'banner';
+        @import 'steps';
         @import 'feedback';
+
     }
 
     @import 'footer';
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        .main {
+            gap: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        .main {
+            gap: 80px;
+        }
+    }
 }

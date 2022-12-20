@@ -1,0 +1,121 @@
+.steps {
+    padding: 0 120px;
+    font-family: $titles-font;
+    color: $gray1;
+}
+
+.steps__title {
+    font-size: 54px;
+    max-width: 483px;
+
+    span {
+        background-color: $bg-color;
+    }
+}
+
+.steps__list {
+    @extend %ul-reset;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 1fr;
+    column-gap: 132px;
+    max-width: 1098px;
+
+    .steps__item {
+        box-sizing: border-box;
+        background-color: white;
+        padding: 32px;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: $text-font;
+        border: 1px solid $violet;
+        border-radius: 30px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &::before {
+            font-family: $titles-font;
+            display: block;
+            content: counter(list-item, decimal-leading-zero) ".";
+            color: $violet;
+        }
+
+        span {
+            font-family: $titles-font;
+            display: block;
+            font-size: 24px;
+            margin: 8px 0 24px 0;
+        }
+    }
+
+    .steps__line {
+        position: relative;
+    }
+
+    .steps__line:nth-of-type(odd)::after {
+        position: absolute;
+        content: "";
+        width: 150%;
+        height: 50%;
+        top: 50%;
+        right: 50%;
+        border-top: 3px dotted $violet;
+        border-right: 3px dotted $violet;
+        border-top-right-radius: 60px;
+        z-index: 0;
+    }
+
+    .steps__line:nth-of-type(even)::after {
+        position: absolute;
+        content: "";
+        width: 150%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        border-top: 3px dotted $violet;
+        border-left: 3px dotted $violet;
+        border-top-left-radius: 60px;
+        z-index: 0;
+    }
+
+    .steps__line:last-of-type::after {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .steps__list {
+        column-gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .steps {
+        padding: 0 40px;
+    }
+
+    .steps__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .steps__item {
+            margin: 0;
+        }
+    }
+
+    .steps__line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .steps {
+        padding: 0 20px;
+    }
+}
