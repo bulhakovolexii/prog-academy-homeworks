@@ -4,6 +4,11 @@
     color: $gray1;
 }
 
+.steps__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .steps__title {
     font-size: 54px;
     max-width: 483px;
@@ -19,6 +24,7 @@
     grid-template: repeat(4, 1fr) / 1fr 1fr;
     column-gap: 132px;
     max-width: 1098px;
+    align-self: center;
 
     .steps__item {
         box-sizing: border-box;

@@ -20,7 +20,7 @@ body {
   src: local("../fonts/Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-.wrapper .header .header__menu .menu__list, .wrapper .main .steps__list, .wrapper .footer .footer__container .footer__info .footer__links ul {
+.wrapper .header .header__menu .menu__list, .wrapper .main .steps__list, .wrapper .main .comments__list, .wrapper .main .questions .questions__list, .wrapper .footer .footer__container .footer__info .footer__links ul {
   display: block;
   list-style-type: none;
   margin-block-start: 0em;
@@ -212,6 +212,9 @@ body {
       padding: 0 120px;
       font-family: "Museo Sans Cyrl 700", sans-serif;
       color: #333333; }
+    .wrapper .main .steps__container {
+      display: flex;
+      flex-direction: column; }
     .wrapper .main .steps__title {
       font-size: 54px;
       max-width: 483px; }
@@ -221,7 +224,8 @@ body {
       display: grid;
       grid-template: repeat(4, 1fr)/1fr 1fr;
       column-gap: 132px;
-      max-width: 1098px; }
+      max-width: 1098px;
+      align-self: center; }
       .wrapper .main .steps__list .steps__item {
         box-sizing: border-box;
         background-color: white;
@@ -393,6 +397,198 @@ body {
           text-align: start; }
         .wrapper .main .feedback .feedback__container .feedback__form {
           padding: 48px 16px; } }
+    .wrapper .main .comments {
+      padding: 0 120px;
+      font-family: "Museo Sans Cyrl 700", sans-serif;
+      color: #333333;
+      display: flex;
+      justify-content: center; }
+    .wrapper .main .comments__container {
+      flex-basis: 1440px;
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      position: relative; }
+    .wrapper .main .comments__title {
+      flex-basis: 41.6666666667%;
+      margin: 0;
+      font-size: 65px;
+      line-height: 66px;
+      max-width: 483px; }
+      .wrapper .main .comments__title span {
+        background-color: rgba(98, 72, 255, 0.1); }
+    .wrapper .main .comments__list {
+      flex-basis: 41.6666666667%; }
+    .wrapper .main .list__item .comments__text {
+      font-size: 24px;
+      position: relative; }
+      .wrapper .main .list__item .comments__text::before {
+        content: url(../images/quotes.svg);
+        position: absolute;
+        height: 27px;
+        width: 33px;
+        left: -48px; }
+      .wrapper .main .list__item .comments__text::after {
+        display: block;
+        content: counter(list-item) " /  4";
+        margin-top: 31px;
+        font-size: 15px;
+        color: #6248FF; }
+    .wrapper .main .item__author {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 17px; }
+      .wrapper .main .item__author .author__photo {
+        height: 73px;
+        width: 73px; }
+      .wrapper .main .item__author .author__data .author__name {
+        margin: 0;
+        font-size: 18px;
+        line-height: 30px; }
+      .wrapper .main .item__author .author__data .author__descr {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 27px; }
+    .wrapper .main .left,
+    .wrapper .main .right {
+      position: absolute;
+      top: 171px;
+      background-image: url(../images/select-row.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      border: 1px solid #E0E0E0;
+      background-color: transparent;
+      height: 48px;
+      width: 48px;
+      transform: rotate(90deg);
+      cursor: pointer; }
+      .wrapper .main .left:hover,
+      .wrapper .main .right:hover {
+        border-color: #6248FF; }
+    .wrapper .main .right {
+      left: 64px;
+      transform: rotate(-90deg); }
+    @media screen and (max-width: 1120px) {
+      .wrapper .main .comments {
+        padding: 0 40px; }
+      .wrapper .main .comments__container {
+        flex-direction: column; }
+      .wrapper .main .comments__list {
+        width: 75%;
+        align-self: center; }
+        .wrapper .main .comments__list .list__item {
+          text-align: center; }
+          .wrapper .main .comments__list .list__item .comments__text::before {
+            position: static;
+            display: block;
+            margin: 0 auto 16px; }
+        .wrapper .main .comments__list .item__author {
+          flex-direction: column;
+          align-items: center; }
+      .wrapper .main .left,
+      .wrapper .main .right {
+        top: 347px; }
+      .wrapper .main .right {
+        left: auto;
+        right: 0; } }
+    @media screen and (max-width: 768px) {
+      .wrapper .main .comments {
+        padding: 0 20px; }
+      .wrapper .main .comments__title {
+        font-size: 40px;
+        line-height: 44px; }
+      .wrapper .main .list__item .comments__text::after {
+        margin-top: 89px; }
+      .wrapper .main .left,
+      .wrapper .main .right {
+        top: auto;
+        bottom: -16px; } }
+    .wrapper .main .questions {
+      font-family: "Museo Sans Cyrl 700", sans-serif;
+      color: #333333;
+      display: flex;
+      flex-direction: column;
+      gap: 68px;
+      padding: 0 120px; }
+      .wrapper .main .questions .questions__title {
+        margin: 0;
+        font-size: 56px;
+        line-height: 66px; }
+        .wrapper .main .questions .questions__title span {
+          background-color: rgba(98, 72, 255, 0.1); }
+      .wrapper .main .questions .questions__list {
+        max-width: 83.3333333333%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px; }
+      .wrapper .main .questions .list__item {
+        width: 100%;
+        padding: 32px 80px 32px 40px;
+        border: 2px solid #6248FF;
+        border-radius: 20px;
+        box-sizing: border-box; }
+      .wrapper .main .questions .item__question {
+        margin: 0;
+        font-size: 24px;
+        position: relative; }
+      .wrapper .main .questions .item__answer {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 27px; }
+      .wrapper .main .questions .item__btn {
+        position: absolute;
+        right: -40px;
+        appearance: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        padding: 8px 8px; }
+        .wrapper .main .questions .item__btn::before, .wrapper .main .questions .item__btn::after {
+          position: absolute;
+          top: 6px;
+          content: '';
+          height: 18px;
+          width: 2px;
+          background-color: #333333; }
+        .wrapper .main .questions .item__btn::before {
+          transform: rotate(90deg); }
+      .wrapper .main .questions .item__btn--active {
+        position: absolute;
+        right: -40px;
+        appearance: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        padding: 8px 8px; }
+        .wrapper .main .questions .item__btn--active::before, .wrapper .main .questions .item__btn--active::after {
+          position: absolute;
+          top: 6px;
+          content: '';
+          height: 18px;
+          width: 2px;
+          background-color: #333333; }
+        .wrapper .main .questions .item__btn--active::before {
+          transform: rotate(45deg); }
+        .wrapper .main .questions .item__btn--active::after {
+          transform: rotate(-45deg); }
+    @media screen and (max-width: 1120px) {
+      .wrapper .main .questions {
+        padding: 0 40px; }
+        .wrapper .main .questions .questions__list {
+          max-width: 100%; } }
+    @media screen and (max-width: 768px) {
+      .wrapper .main .questions {
+        padding: 0 20px; }
+        .wrapper .main .questions .questions__title {
+          font-size: 40px;
+          line-height: 44px; } }
   .wrapper .footer {
     padding: 35px 120px;
     display: flex;
