@@ -211,8 +211,11 @@ body {
     .wrapper .main .steps {
       padding: 0 120px;
       font-family: "Museo Sans Cyrl 700", sans-serif;
-      color: #333333; }
+      color: #333333;
+      display: flex;
+      justify-content: center; }
     .wrapper .main .steps__container {
+      flex-basis: 1440px;
       display: flex;
       flex-direction: column; }
     .wrapper .main .steps__title {
@@ -510,9 +513,13 @@ body {
       font-family: "Museo Sans Cyrl 700", sans-serif;
       color: #333333;
       display: flex;
-      flex-direction: column;
-      gap: 68px;
+      justify-content: center;
       padding: 0 120px; }
+      .wrapper .main .questions .questions__container {
+        flex-basis: 1440px;
+        display: flex;
+        flex-direction: column;
+        gap: 68px; }
       .wrapper .main .questions .questions__title {
         margin: 0;
         font-size: 56px;
