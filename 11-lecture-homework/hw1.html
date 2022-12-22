@@ -1,0 +1,141 @@
+<head>
+    <style>
+        span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task 1</h2>
+    <p>За координатами двох точок, які вводить користувач, визначити рівняння прямої, що проходить через ці точки.</p>
+    <p>Загальний вигляд рівняння:: y = kx + b; где k = (y1 - y2) / (x1 - x2), b = y2 - k*x2.</p>
+    <button onclick="task1()">Почати</button>
+    <p id="result1">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+        function task1() {
+            const y1 = +prompt('Введіть координату y1');
+            const x1 = +prompt('Введіть координату x1');
+            const y2 = +prompt('Введіть координату y2');
+            const x2 = +prompt('Введіть координату x2');
+            const k = (y1 - y2) / (x1 - x2);
+            const b = y2 - k * x2;
+            const equation = `y = ${k}x + ${b}`;
+            document.getElementById("result1").querySelector('span').innerHTML = equation;
+        }
+    </pre>
+    <script>
+        function task1() {
+            const y1 = +prompt('Введіть координату y1');
+            const x1 = +prompt('Введіть координату x1');
+            const y2 = +prompt('Введіть координату y2');
+            const x2 = +prompt('Введіть координату x2');
+            const k = (y1 - y2) / (x1 - x2);
+            const b = y2 - k * x2;
+            const equation = `y = ${k}x + ${b}`;
+            document.getElementById("result1").querySelector('span').innerHTML = equation;
+        }
+    </script>
+    <hr>
+    <h2>Task 2</h2>
+    <p>Обмінювати значення двох змінних, використовуючи третю (буферну) змінну.</p>
+    <button onclick="task2()">Почати</button>
+    <p id="result21">Результат &#8594; <span></span></p>
+    <p id="result22">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+        function task2() {
+            let first = 'first';
+            let second = 'second';
+            document.getElementById("result21").querySelector('span').innerHTML = `first = ${first}, second = ${second}`;
+            let buffer = first;
+            first = second;
+            second = buffer;
+            document.getElementById("result22").querySelector('span').innerHTML = `first = ${first}, second = ${second}`;
+        }
+    </pre>
+    <script>
+        function task2() {
+            let first = 'first';
+            let second = 'second';
+            document.getElementById("result21").querySelector('span').innerHTML = `first = ${first}, second = ${second}`;
+            let buffer = first;
+            first = second;
+            second = buffer;
+            document.getElementById("result22").querySelector('span').innerHTML = `first = ${first}, second = ${second}`;
+        }
+    </script>
+    <hr>
+    <h2>Task 3</h2>
+    <p>Оголосіть дві змінні: admin та name. Запишіть у name рядок "Василь". Замініть значення з name на admin. Виведіть
+        admin.</p>
+    <button onclick="task3()">Почати</button>
+    <p id="result3">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+        function task3() {
+            let name;
+            let admin;
+            name = 'Василь';
+            admin = name;
+            document.getElementById("result3").querySelector('span').innerHTML = admin;
+        }
+    </pre>
+    <script>
+        function task3() {
+            let name;
+            let admin;
+            name = 'Василь';
+            admin = name;
+            document.getElementById("result3").querySelector('span').innerHTML = admin;
+        }
+    </script>
+    <hr>
+    <h2>Task 4</h2>
+    <p>Отримати від користувача дані про користувача: ім'я, прізвище, вік. Обробити їх та вивести на екран.</p>
+    <button onclick="task4()">Почати</button>
+    <p id="result4">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+        function task4() {
+            const userFirstName = prompt('Введіть ваше ім\'я');
+            const userSecondName = prompt('Введіть ваше прізвище');
+            const userAge = +prompt('Введіть ваш вік');
+            const result = `Ви - ${userFirstName} ${userSecondName}. Вам ${userAge} років`;
+            document.getElementById("result4").querySelector('span').innerHTML = result;
+        }
+    </pre>
+    <script>
+        function task4() {
+            const userFirstName = prompt('Введіть ваше ім\'я');
+            const userSecondName = prompt('Введіть ваше прізвище');
+            const userAge = +prompt('Введіть ваш вік');
+            const result = `Ви - ${userFirstName} ${userSecondName}. Вам ${userAge} років`;
+            document.getElementById("result4").querySelector('span').innerHTML = result;
+        }
+    </script>
+    <hr>
+    <h2>Task 5</h2>
+    <p>Запитайте у користувача його вік, після чого виведіть на екран модальне вікно із запитанням: "Ваш вік ...(введене
+        користувачем число) років?".</p>
+    <p>Далі, залежно від вибору користувача, виводиться модальне вікно з інформацією true або false.</p>
+    <button onclick="task5()">Почати</button>
+    <P>Код:</P>
+    <pre>
+        function task5() {
+            const age = +prompt('Скільки вам років?');
+            const confirmation = confirm(`Вам ${age} років?`);
+            alert(confirmation);
+        }
+    </pre>
+    <script>
+        function task5() {
+            const age = +prompt('Скільки вам років?');
+            const confirmation = confirm(`Вам ${age} років?`);
+            alert(confirmation);
+        }
+    </script>
+
+</body>
