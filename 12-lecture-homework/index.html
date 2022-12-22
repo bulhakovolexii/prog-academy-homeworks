@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HW 2</title>
+    <style>
+        span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task 1</h2>
+    <p>Серед трьох чисел знайти середнє арифметичне. Якщо серед чисел є рівні, вивести повідомлення "Помилка". Числа
+        прийняти від користувача.</p>
+    <button onclick="task1()">Почати</button>
+    <p id="result1">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+        function task1() {
+            const a = +prompt('Введіть перше число');
+            const b = +prompt('Введіть друге число');
+            const c = +prompt('Введіть третє число');
+            let result;
+            if (a === b || b === c || a === c) {
+                alert('Помилка');
+            } else {
+                result = (a + b + c) / 3;
+            }
+            document.getElementById("result1").querySelector('span').innerHTML = result;
+        }
+    </pre>
+    <script>
+        function task1() {
+            const a = +prompt('Введіть перше число');
+            const b = +prompt('Введіть друге число');
+            const c = +prompt('Введіть третє число');
+            let result;
+            if (a === b || b === c || a === c) {
+                alert('Помилка');
+            } else {
+                result = (a + b + c) / 3;
+            }
+            document.getElementById("result1").querySelector('span').innerHTML = result;
+        }
+    </script>
+    <hr>
+    <h2>Task 2</h2>
+    <p>Визначити якесь із трьох, введених користувачем, чисел максимальне і вивести його на екран.</p>
+    <button onclick="task2()">Почати</button>
+    <p id="result2">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+        function task2() {
+            const a = +prompt('Введіть перше число');
+            const b = +prompt('Введіть друге число');
+            const c = +prompt('Введіть третє число');
+            let max;
+            if (a > b) {
+                max = a;
+            } else {
+                max = b;
+            }
+            if (c > max) {
+                max = c;
+            }
+            document.getElementById("result2").querySelector('span').innerHTML = max;
+        }
+    </pre>
+    <script>
+        function task2() {
+            const a = +prompt('Введіть перше число');
+            const b = +prompt('Введіть друге число');
+            const c = +prompt('Введіть третє число');
+            let max;
+            if (a > b) {
+                max = a;
+            } else {
+                max = b;
+            }
+            if (c > max) {
+                max = c;
+            }
+            document.getElementById("result2").querySelector('span').innerHTML = max;
+        }
+    </script>
+    <hr>
+</body>
+
+</html>
