@@ -74,7 +74,7 @@
 - Task 2. Add adaptation to all previous projects.
   - ✓ Done
 - Task 3. Register free hosting and domain, and publish a page with links to all projects there.
-  - Available at http://bulhakov.rf.gd/music/
+  - Available at [http://bulhakov.rf.gd/music/](http://bulhakov.rf.gd/music/)
 
 ### 10 Lecture -  SASS, working with Figma
 
