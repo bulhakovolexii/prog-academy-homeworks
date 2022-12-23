@@ -48,7 +48,7 @@
 - Make up a web page from a mockup
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/6-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/6-lecture-homework/)
 
-### 7 Practice
+### 7 Practice - Navigation
 
 - Task 1. Make a simple navbar
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/7-lecture-homework/task1/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/7-lecture-homework/task1/)
@@ -62,7 +62,7 @@
 - Reproduce site section layout using GRID Layout
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/8-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/8-lecture-homework/)
 
-### 8.1 Practice 
+### 8.1 Practice - Making a simple page with form
 
 - Make up a web page from a mockup
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/8.1-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/8.1-lecture-homework/)
@@ -92,3 +92,8 @@
 
 - Solve exercises 1 and 3 from lecture 2
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/12-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/12-lecture-homework/)
+
+### 13 Lecture - Cycles and arrays
+
+- Solve exercises 2, 4 and 5 from lecture 2
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/13-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/13-lecture-homework/)

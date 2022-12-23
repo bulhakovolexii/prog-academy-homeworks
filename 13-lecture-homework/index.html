@@ -11,82 +11,122 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+
+        #result1 {
+            font-size: 16px;
+            line-height: 0.55;
+        }
     </style>
 </head>
 
 <body>
-    <h2>Task 2</h2>
-    <p>Серед трьох чисел знайти середнє арифметичне. Якщо серед чисел є рівні, вивести повідомлення "Помилка". Числа
-        прийняти від користувача.</p>
+    <h2>Task 1</h2>
+    <p>Побудувати прямокутний трикутник, що складається із символу "*".</p>
     <button onclick="task1()">Почати</button>
-    <p id="result1">Результат &#8594; <span></span></p>
+    <p>Результат &#8594;
+    <pre id="result1"></pre>
+    </p>
     <P>Код:</P>
     <pre>
-        function task1() {
-            const a = +prompt('Введіть перше число');
-            const b = +prompt('Введіть друге число');
-            const c = +prompt('Введіть третє число');
-            let result;
-            if (a === b || b === c || a === c) {
-                alert('Помилка');
-            } else {
-                result = (a + b + c) / 3;
-            }
-            document.getElementById("result1").querySelector('span').innerHTML = result;
-        }
+function task1() {
+    document.getElementById('result1').innerHTML = '' //сlears the previous result
+    let edge = +prompt('Введіть довжину ребра');
+    let str = '*'
+    for (let i = 0; i < edge; i++) {
+        document.getElementById('result1').append(str + '\n');
+        str += '*';
+    }
+}
     </pre>
     <script>
         function task1() {
-            const a = +prompt('Введіть перше число');
-            const b = +prompt('Введіть друге число');
-            const c = +prompt('Введіть третє число');
-            let result;
-            if (a === b || b === c || a === c) {
-                alert('Помилка');
-            } else {
-                result = (a + b + c) / 3;
+            document.getElementById('result1').innerHTML = '' //сlears the previous result
+            let edge = +prompt('Введіть довжину ребра');
+            let str = '*'
+            for (let i = 0; i < edge; i++) {
+                document.getElementById('result1').append(str + '\n');
+                str += '*';
             }
-            document.getElementById("result1").querySelector('span').innerHTML = result;
         }
     </script>
     <hr>
     <h2>Task 2</h2>
-    <p>Визначити якесь із трьох, введених користувачем, чисел максимальне і вивести його на екран.</p>
+    <p>Дано два числа A та B де A менше B. Виведіть на екран суму всіх чисел, розташованих у числовому проміжку від А до
+        В.</p>
+    <p>Виведіть на екран усі непарні значення, розташовані у числовому проміжку від А до В.</p>
     <button onclick="task2()">Почати</button>
-    <p id="result2">Результат &#8594; <span></span></p>
+    <p id="result21">Результат &#8594; <span></span>
+    <p id="result22">Результат &#8594; <span></span>
+    </p>
     <P>Код:</P>
     <pre>
-        function task2() {
-            const a = +prompt('Введіть перше число');
-            const b = +prompt('Введіть друге число');
-            const c = +prompt('Введіть третє число');
-            let max;
-            if (a > b) {
-                max = a;
-            } else {
-                max = b;
-            }
-            if (c > max) {
-                max = c;
-            }
-            document.getElementById("result2").querySelector('span').innerHTML = max;
+function task2() {
+    document.getElementById('result22').querySelector('span').innerHTML = ''; //сlears the previous result
+    const a = +prompt('Введіть число А');
+    const b = +prompt('Введіть число В');
+    let sum = 0;
+    for (let i = a; i <= b; i++) {
+        sum += i;
+        if (i % 2 !== 0) {
+            document.getElementById('result22').querySelector('span').append(i + ', ');
         }
+    }
+    document.getElementById('result21').querySelector('span').innerHTML = sum;
+}
     </pre>
     <script>
         function task2() {
-            const a = +prompt('Введіть перше число');
-            const b = +prompt('Введіть друге число');
-            const c = +prompt('Введіть третє число');
-            let max;
-            if (a > b) {
-                max = a;
-            } else {
-                max = b;
+            document.getElementById('result22').querySelector('span').innerHTML = ''; //сlears the previous result
+            const a = +prompt('Введіть число А');
+            const b = +prompt('Введіть число В');
+            let sum = 0;
+            for (let i = a; i <= b; i++) {
+                sum += i;
+                if (i % 2 !== 0) {
+                    document.getElementById('result22').querySelector('span').append(i + ' ');
+                }
             }
-            if (c > max) {
-                max = c;
+            document.getElementById('result21').querySelector('span').innerHTML = sum;
+        }
+    </script>
+    <hr>
+    <h2>Task 3</h2>
+    <p>Вивести на екран ряд чисел Фібоначчі, що складається з n елементів (n прийняти від користувача).</p>
+    <p>Числа Фібоначчі - це елементи числової послідовності, в якій кожне наступне число дорівнює сумі двох попередніх.
+    </p>
+    <button onclick="task3()">Почати</button>
+    <p id="result3">Результат &#8594; <span></span></p>
+    <P>Код:</P>
+    <pre>
+function task3() {
+    document.getElementById('result3').querySelector('span').innerHTML = ''; //сlears the previous result
+    const n = +prompt('Введіть n');
+    let a = 1;
+    let b = 1;
+    document.getElementById('result3').querySelector('span').append(a + ' ');
+    document.getElementById('result3').querySelector('span').append(b + ' ');
+    for (let i = 3; i <= n; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+        document.getElementById('result3').querySelector('span').append(b + ' ');
+    }
+}
+    </pre>
+    <script>
+        function task3() {
+            document.getElementById('result3').querySelector('span').innerHTML = ''; //сlears the previous result
+            const n = +prompt('Введіть n');
+            let a = 1;
+            let b = 1;
+            document.getElementById('result3').querySelector('span').append(a + ' ');
+            document.getElementById('result3').querySelector('span').append(b + ' ');
+            for (let i = 3; i <= n; i++) {
+                let c = a + b;
+                a = b;
+                b = c;
+                document.getElementById('result3').querySelector('span').append(b + ' ');
             }
-            document.getElementById("result2").querySelector('span').innerHTML = max;
         }
     </script>
 </body>
