@@ -97,3 +97,8 @@
 
 - Solve exercises 2, 4 and 5 from lecture 2
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/13-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/13-lecture-homework/)
+
+### 14 Lecture - Arrays, methods, functions
+
+- Solve all exercises from lecture 3
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/14-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/14-lecture-homework/)

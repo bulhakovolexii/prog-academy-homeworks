@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HW 4</title>
+    <style>
+        span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Task 1</h2>
+    <p>Зробити власні приклади методів для масивів.</p>
+    <p>Метод <code>join()</code> - поєднує всі елементи масиву (або масивоподібного об'єкта) у рядок.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <input type="text" id="separator" placeholder="Введіть розділювач">
+    <button onclick="task11()">Почати</button>
+    <p>Результат &#8594; <span id="result11"></span></p>
+    <P>Код:</P>
+    <pre>
+let srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+document.getElementsByClassName('srcArr')[0].innerHTML = `[${srcArr.join(', ')}]`;
+function task11() {
+    let separator = document.getElementById('separator').value;
+    let str = srcArr.join(separator);
+    document.getElementById('result11').innerHTML = str;
+}
+    </pre>
+    <script>
+        let srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+        document.getElementsByClassName('srcArr')[0].innerHTML = `[${srcArr.join(', ')}]`;
+        function task11() {
+            let separator = document.getElementById('separator').value;
+            let str = srcArr.join(separator);
+            document.getElementById('result11').innerHTML = str;
+        }
+    </script>
+    <p>Метод <code>concat()</code> - повертає новий масив, що складається з масиву, на якому він був викликаний,
+        з'єднаного з іншими масивами та/або значеннями, переданими як аргументи.</p>
+    <p>Вихідні масиви: <code id="srcArrA"></code> <code id="srcArrB"></code></p>
+    <button onclick="task12()">Почати</button>
+    <p>Результат &#8594; <code id="result12"></code></p>
+    <P>Код:</P>
+    <pre>
+let srcArrA = ['Gibson', 'Fender', 'Yamaha'];
+let srcArrB = ['Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+document.getElementById('srcArrA').innerHTML = `[${srcArrA.join(', ')}]`;
+document.getElementById('srcArrB').innerHTML = `[${srcArrB.join(', ')}]`;
+function task12() {
+    let concatArr = srcArrA.concat(srcArrB);
+    document.getElementById('result12').innerHTML = `[${concatArr.join(', ')}]`;
+}
+    </pre>
+    <script>
+        let srcArrA = ['Gibson', 'Fender', 'Yamaha'];
+        let srcArrB = ['Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+        document.getElementById('srcArrA').innerHTML = `[${srcArrA.join(', ')}]`;
+        document.getElementById('srcArrB').innerHTML = `[${srcArrB.join(', ')}]`;
+        function task12() {
+            let concatArr = srcArrA.concat(srcArrB);
+            document.getElementById('result12').innerHTML = `[${concatArr.join(', ')}]`;
+        }
+    </script>
+    <p>Метод <code>reverse()</code> - на місці звертає порядок прямування елементів масиву. Перший елемент масиву стає
+        останнім, а останній першим.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <button onclick="task13()">Почати</button>
+    <p>Результат &#8594; <code id="result13"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[1].innerHTML = `[${srcArr.join(', ')}]`;
+function task13() {
+    let reverseArr = srcArr.reverse();
+    document.getElementById('result13').innerHTML = `[${reverseArr.join(', ')}]`;
+    srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the
+    original array
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[1].innerHTML = `[${srcArr.join(', ')}]`;
+        function task13() {
+            let reverseArr = srcArr.reverse();
+            document.getElementById('result13').innerHTML = `[${reverseArr.join(', ')}]`;
+            srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+        }
+    </script>
+    <p>Метод <code>slice()</code> - повертає новий масив, що містить копію частини вихідного масиву.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <input type="text" id="sliceFrom" placeholder="Початковий елемент">
+    <input type="text" id="sliceTo" placeholder="Кінцевий елемент">
+    <button onclick="task14()">Почати</button>
+    <p>Результат &#8594; <code id="result14"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[2].innerHTML = `[${srcArr.join(', ')}]`;
+function task14() {
+    let sliceFrom = document.getElementById('sliceFrom').value;
+    let sliceTo = document.getElementById('sliceTo').value;
+    let sliceArr = srcArr.slice(sliceFrom, sliceTo);
+    document.getElementById('result14').innerHTML = `[${sliceArr.join(', ')}]`;
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[2].innerHTML = `[${srcArr.join(', ')}]`;
+        function task14() {
+            let sliceFrom = document.getElementById('sliceFrom').value;
+            let sliceTo = document.getElementById('sliceTo').value;
+            let sliceArr = srcArr.slice(sliceFrom, sliceTo);
+            document.getElementById('result14').innerHTML = `[${sliceArr.join(', ')}]`;
+        }
+    </script>
+    <p>Метод <code>splice()</code> - змінює вміст масиву, видаляючи існуючі елементи та/або додаючи нові.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <input type="number" id="spliceFrom" placeholder="Початковий елемент">
+    <input type="number" id="spliceDel" placeholder="Кількість елементів, що видаляються" style="width: 260px">
+    <input type="text" id="spliceAddStr" placeholder="Елементи що додаються (через кому)" style="width: 240px">
+    <button onclick="task15()">Почати</button>
+    <p>Результат &#8594; <code id="result151"></code></p>
+    <p>Змінений вихідний масив &#8594; <code id="result152"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[3].innerHTML = `[${srcArr.join(', ')}]`;
+function task15() {
+    let spliceFrom = document.getElementById('spliceFrom').value;
+    let spliceDel = document.getElementById('spliceDel').value;
+    let spliceAddStr = document.getElementById('spliceAddStr').value;
+    let spliceAddArr = spliceAddStr.split(', ');
+    let spliceArr = srcArr.splice(spliceFrom, spliceDel, spliceAddStr);
+    document.getElementById('result151').innerHTML = `[${spliceArr.join(', ')}]`;
+    document.getElementById('result152').innerHTML = `[${srcArr.join(', ')}]`;
+    srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[3].innerHTML = `[${srcArr.join(', ')}]`;
+        function task15() {
+            let spliceFrom = document.getElementById('spliceFrom').value;
+            let spliceDel = document.getElementById('spliceDel').value;
+            let spliceAddStr = document.getElementById('spliceAddStr').value;
+            let spliceAddArr = spliceAddStr.split(', ');
+            let spliceArr = srcArr.splice(spliceFrom, spliceDel, spliceAddStr);
+            document.getElementById('result151').innerHTML = `[${spliceArr.join(', ')}]`;
+            document.getElementById('result152').innerHTML = `[${srcArr.join(', ')}]`;
+            srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+        }
+    </script>
+    <p>Метод <code>sort()</code> - на місці сортує елементи масиву та повертає відсортований масив. Сортування не
+        обов'язково стійке (англ.). Порядок сортування за замовчуванням відповідає порядку кодових точок Unicode.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <button onclick="task16()">Почати</button>
+    <p>Результат &#8594; <code id="result16"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[4].innerHTML = `[${srcArr.join(', ')}]`;
+function task16() {
+    let sortArr = srcArr.sort();
+    document.getElementById('result16').innerHTML = `[${sortArr.join(', ')}]`;
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[4].innerHTML = `[${srcArr.join(', ')}]`;
+        function task16() {
+            let sortArr = srcArr.sort();
+            document.getElementById('result16').innerHTML = `[${sortArr.join(', ')}]`;
+        }
+    </script>
+    <p>Метод <code>push()</code> - додає один або більше елементів до кінця масиву і повертає нову довжину масиву.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <input type="text" id="pushItem" placeholder="Доданий елемент">
+    <button onclick="task17()">Почати</button>
+    <p>Результат &#8594; <code id="result17"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[5].innerHTML = `[${srcArr.join(', ')}]`;
+function task17() {
+    let pushItem = document.getElementById('pushItem').value;
+    srcArr.push(pushItem);
+    document.getElementById('result17').innerHTML = `[${srcArr.join(', ')}]`;
+    srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[5].innerHTML = `[${srcArr.join(', ')}]`;
+        function task17() {
+            let pushItem = document.getElementById('pushItem').value;
+            srcArr.push(pushItem);
+            document.getElementById('result17').innerHTML = `[${srcArr.join(', ')}]`;
+            srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+        }
+    </script>
+    <p>Метод <code>pop()</code> - видаляє останній елемент з масиву та повертає його значення.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <button onclick="task18()">Почати</button>
+    <p>Результат &#8594; <code id="result18"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[6].innerHTML = `[${srcArr.join(', ')}]`;
+function task18() {
+    srcArr.pop();
+    document.getElementById('result18').innerHTML = `[${srcArr.join(', ')}]`;
+    srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[6].innerHTML = `[${srcArr.join(', ')}]`;
+        function task18() {
+            srcArr.pop();
+            document.getElementById('result18').innerHTML = `[${srcArr.join(', ')}]`;
+            srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+        }
+    </script>
+    <p>Метод <code>unshift()</code> - додає один або більше елементів на початок масиву і повертає нову довжину масиву.
+    </p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <input type="text" id="unshiftItem" placeholder="Доданий елемент">
+    <button onclick="task19()">Почати</button>
+    <p>Результат &#8594; <code id="result19"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[7].innerHTML = `[${srcArr.join(', ')}]`;
+function task19() {
+    let unshiftItem = document.getElementById('unshiftItem').value;
+    srcArr.unshift(unshiftItem);
+    document.getElementById('result19').innerHTML = `[${srcArr.join(', ')}]`;
+    srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[7].innerHTML = `[${srcArr.join(', ')}]`;
+        function task19() {
+            let unshiftItem = document.getElementById('unshiftItem').value;
+            srcArr.unshift(unshiftItem);
+            document.getElementById('result19').innerHTML = `[${srcArr.join(', ')}]`;
+            srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+        }
+    </script>
+    <p>Метод <code>shift()</code> - видаляє останній елемент з масиву та повертає його значення.</p>
+    <p>Вихідний масив: <code class="srcArr"></code></p>
+    <button onclick="task120()">Почати</button>
+    <p>Результат &#8594; <code id="result120"></code></p>
+    <P>Код:</P>
+    <pre>
+document.getElementsByClassName('srcArr')[8].innerHTML = `[${srcArr.join(', ')}]`;
+function task120() {
+    srcArr.shift();
+    document.getElementById('result120').innerHTML = `[${srcArr.join(', ')}]`;
+    srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+}
+    </pre>
+    <script>
+        document.getElementsByClassName('srcArr')[8].innerHTML = `[${srcArr.join(', ')}]`;
+        function task120() {
+            srcArr.shift();
+            document.getElementById('result120').innerHTML = `[${srcArr.join(', ')}]`;
+            srcArr = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone']; //resetting the state of the original array
+        }
+    </script>
+    <hr>
+    <h2>Task 2</h2>
+    <p>Створити функцію знаходження мінімального і максимального елемента масиву getMinAndMax(array). Результат повинен
+        виводитись у консоль.</p>
+    <p>Вихідний масив: <code id="srcArr2"></code></p>
+    <button onclick="getMinAndMax()">Почати</button>
+    <p>Результат &#8594;</p>
+    <pre id="result2" style="height: 200px; display: flex; flex-direction: column-reverse; overflow:auto"></pre>
+    <P>Код:</P>
+    <pre>
+let srcArr2 = [432, 12, 634, 2367, 12, 2, 452, 95923];
+document.getElementById('srcArr2').innerHTML = `[${srcArr2.join(', ')}]`
+function getMinAndMax() {
+    let min = Infinity;
+    let max = -Infinity;
+    for (let i = 0; i <= srcArr2.length; i++) {
+        if (srcArr2[i] < min) {
+            min = srcArr2[i];
+        } else if (srcArr2[i] >= max) {
+            max = srcArr2[i];
+        }
+    }
+    console.log(`min = ${min}, max = ${max}`);
+    document.getElementById('result2').append(`> min = ${min}, max = ${max}\n`);
+}
+    </pre>
+    <script>
+        let srcArr2 = [432, 12, 634, 2367, 12, 2, 452, 95923];
+        document.getElementById('srcArr2').innerHTML = `[${srcArr2.join(', ')}]`
+        function getMinAndMax() {
+            let min = Infinity;
+            let max = -Infinity;
+            for (let i = 0; i <= srcArr2.length; i++) {
+                if (srcArr2[i] < min) {
+                    min = srcArr2[i];
+                } else if (srcArr2[i] >= max) {
+                    max = srcArr2[i];
+                }
+            }
+            console.log(`min = ${min}, max = ${max}`);
+            document.getElementById('result2').append(`> min = ${min}, max = ${max}\n`);
+        }
+    </script>
+    <h2>Task 3</h2>
+    <p>Визначити елементи масиву та вивести їх значення, індекси яких лежить у вказаній межі. Межі вводить користувач.
+    </p>
+    <p>Вихідний масив: <code id="srcArr3"></code></p>
+    <input type="number" id="task3From" placeholder="Початковий індекс">
+    <input type="number" id="task3To" placeholder="Кінцевий індекс">
+    <button onclick="task3()">Почати</button>
+    <p>Результат &#8594;<code id="result3"></code></p>
+    <P>Код:</P>
+    <pre>
+let srcArr3 = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+document.getElementById('srcArr3').innerHTML = `[${srcArr3.join(', ')}]`
+function task3() {
+    let sliceFrom = document.getElementById('task3From').value;
+    let sliceTo = document.getElementById('task3To').value;
+    let sliceArr = srcArr.slice(sliceFrom, sliceTo);
+    document.getElementById('result3').innerHTML = `[${sliceArr.join(', ')}]`;
+}
+    </pre>
+    <script>
+        let srcArr3 = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+        document.getElementById('srcArr3').innerHTML = `[${srcArr3.join(', ')}]`
+        function task3() {
+            let sliceFrom = document.getElementById('task3From').value;
+            let sliceTo = document.getElementById('task3To').value;
+            let sliceArr = srcArr.slice(sliceFrom, sliceTo);
+            document.getElementById('result3').innerHTML = `[${sliceArr.join(', ')}]`;
+        }
+    </script>
+    <hr>
+    <h2>Task 4</h2>
+    <p>Відсортувати масив на 10 чисел у порядку зростання. Значення приймаються від користувача. Сортування здійснюється
+        методом sort().</p>
+    <input type="number" id="addElem" placeholder="Додати елемент">
+    <button onclick="addElem()">Додати елемент</button>
+    <p>Вихідний масив: <code id="srcArr4"></code></p>
+    <button onclick="task4()">Почати</button>
+    <p>Результат &#8594;<code id="result4"></code></p>
+    <P>Код:</P>
+    <pre>
+let srcArr4 = [];
+function addElem() {
+    if (srcArr4.length < 11) {
+        console.log(srcArr4.length);
+        srcArr4.push(document.getElementById('addElem').value);
+        document.getElementById('srcArr4').innerHTML = `[${srcArr4.join(', ')}]`;
+        document.getElementById('addElem').value = '';
+    }
+    if (srcArr4.length === 10) {
+        alert('Массив заповнено');
+        document.getElementById('addElem').value = '';
+        document.getElementById('addElem').setAttribute('disabled', 'disabled');
+    }
+}
+function task4() {
+    let sortArr4 = srcArr4.sort();
+    document.getElementById('result4').innerHTML = `[${sortArr4.join(', ')}]`;
+}
+    </pre>
+    <script>
+        let srcArr4 = [];
+        function addElem() {
+            if (srcArr4.length < 11) {
+                console.log(srcArr4.length);
+                srcArr4.push(document.getElementById('addElem').value);
+                document.getElementById('srcArr4').innerHTML = `[${srcArr4.join(', ')}]`;
+                document.getElementById('addElem').value = '';
+            }
+            if (srcArr4.length === 10) {
+                alert('Массив заповнено');
+                document.getElementById('addElem').value = '';
+                document.getElementById('addElem').setAttribute('disabled', 'disabled');
+            }
+        }
+        function task4() {
+            let sortArr4 = srcArr4.sort();
+            document.getElementById('result4').innerHTML = `[${sortArr4.join(', ')}]`;
+        }
+    </script>
+    <hr>
+    <h2>Task 5</h2>
+    <p>Створити програму, що виконує вставку елемента масив після елемента, значення якого вкаже користувач.</p>
+    <input type="number" id="insertIndex" placeholder="Індекс вставлення">
+    <p>Вихідний масив: <code id="srcArr5"></code></p>
+    <button onclick="task5()">Почати</button>
+    <p>Результат &#8594;<code id="result5"></code></p>
+    <P>Код:</P>
+    <pre>
+let srcArr5 = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+document.getElementById('srcArr5').innerHTML = `[${srcArr5.join(', ')}]`;
+const newElem = 'Music Man';
+function task5() {
+    const insertIndex = document.getElementById('insertIndex').value;
+    srcArr5.splice(insertIndex, 0, newElem);
+    document.getElementById('result5').innerHTML = `[${srcArr5.join(', ')}]`;
+}
+    </pre>
+    <script>
+        let srcArr5 = ['Gibson', 'Fender', 'Yamaha', 'Ibanez', 'Hohner', 'Washburn', 'Epiphone'];
+        document.getElementById('srcArr5').innerHTML = `[${srcArr5.join(', ')}]`;
+        const newElem = 'Music Man';
+        function task5() {
+            const insertIndex = document.getElementById('insertIndex').value;
+            srcArr5.splice(insertIndex, 0, newElem);
+            document.getElementById('result5').innerHTML = `[${srcArr5.join(', ')}]`;
+        }
+    </script>
+    <hr>
+    <h2>Task 6</h2>
+    <p>Необхідно отримати передостанній елемент з масиву month та вивести його на екран. var month = ['Січень', 'Лютий',
+        'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень']
+    </p>
+    <button onclick="task6()">Почати</button>
+    <p>Результат &#8594;<code id="result6"></code></p>
+    <P>Код:</P>
+    <pre>
+var month = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+function task6() {
+    let result6 = month.slice(-2, -1);
+    document.getElementById('result6').innerHTML = `[${result6.join(', ')}]`;
+}
+    </pre>
+    <script>
+        var month = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+        function task6() {
+            let result6 = month.slice(-2, -1);
+            document.getElementById('result6').innerHTML = `[${result6.join(', ')}]`;
+        }
+    </script>
+    <hr>
+</body>
+
+</html>
