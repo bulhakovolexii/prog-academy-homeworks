@@ -102,3 +102,8 @@
 
 - Solve all exercises from lecture 3
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/14-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/14-lecture-homework/)
+
+### 15 Lecture - Scopes and working with tags
+
+- Using the select.options, select.value and select.selectedIndex properties, add 4 function buttons for navigating through the dropdown list items.
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/15-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/15-lecture-homework/)
