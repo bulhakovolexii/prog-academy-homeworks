@@ -36,7 +36,39 @@
 
     </pre>
     <p>Код:</p>
-    <pre></pre>
+    <pre>
+let staff = [];
+let name = document.getElementById('name');
+let sName = document.getElementById('sName');
+let age = document.getElementById('age');
+let occupation = document.getElementById('occupation');
+let consoleEmulation = document.getElementById('consoleEmulation');
+function addNewEmployee() {
+    let employee = {
+        name: name.value,
+        sName: sName.value,
+        age: age.value,
+        occupation: occupation.value,
+        show: function () {
+            let employeeData = '';
+            for (let key in this) {
+                if (key !== 'show') {
+                    employeeData += `${key}: ${this[key]} `;
+                }
+            }
+            return employeeData;
+        }
+    };
+    staff.push(employee);
+    alert('Співробітника додано');
+}
+function showAllEmployees() {
+    for (let i = 0; i < staff.length; i++) {
+        console.log(staff[i].show());
+        consoleEmulation.append(`> ${staff[i].show()}\n`);
+    }
+}
+</pre>
     <script>
         let staff = [];
         let name = document.getElementById('name');
@@ -86,6 +118,23 @@
         <li>Після виконання функції – вивести інформацію про співробітників.</li>
     </ul>
     <button onclick="salaryCalc(staff)">Розрахувати ЗП співробітників</button>
+    <p>Код:</p>
+    <pre>
+function salaryCalc(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        switch (arr[i].occupation) {
+            case 'director': arr[i].salary = 3000;
+                break;
+            case 'manager': arr[i].salary = 1500;
+                break;
+            case 'programmer': arr[i].salary = 2000;
+                break;
+            default: arr[i].salary = 1000;
+        }
+    }
+    showAllEmployees();
+}
+</pre>
     <script>
         function salaryCalc(arr) {
             for (let i = 0; i < arr.length; i++) {
