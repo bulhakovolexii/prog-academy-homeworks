@@ -107,3 +107,8 @@
 
 - Using the select.options, select.value and select.selectedIndex properties, add 4 function buttons for navigating through the dropdown list items.
   - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/15-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/15-lecture-homework/)
+
+### 16 Lecture - Objets
+
+- Solve exercises 4 from lecture 6
+  - [demo](https://bulhakovolexii.github.io/Prog-academy-homeworks/16-lecture-homework/index.html) / [code base](https://github.com/bulhakovolexii/Prog-academy-homeworks/blob/main/16-lecture-homework/)
