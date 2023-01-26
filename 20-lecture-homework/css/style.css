@@ -84,14 +84,14 @@ body {
 .popup__form {
     display: flex;
     flex-direction: column;
-    transition: 1s;
+    transition: 500ms;
     height: auto;
     max-height: 0;
     overflow: hidden;
 }
 
 .popup__form.active {
-    transition: 1s;
+    transition: 500ms;
     max-height: 467px;
 }
 
