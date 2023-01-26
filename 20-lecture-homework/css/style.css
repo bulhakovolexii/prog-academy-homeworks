@@ -180,4 +180,10 @@ body {
     .names__fill {
         flex-basis: 100%;
     }
+
+    .popup.active {
+        scale: 0.7;
+        left: 0;
+        right: 0;
+    }
 }
