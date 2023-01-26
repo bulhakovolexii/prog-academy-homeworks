@@ -191,4 +191,12 @@ body {
         left: 0;
         right: 0;
     }
+
+    .popup__form.active {
+        max-height: 584px;
+    }
+
+    .form__submit {
+        font-size: 22px;
+    }
 }
