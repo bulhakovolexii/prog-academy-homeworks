@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="open-popup">Open</button>
+        <div class="popup__bg">
+            <div class="popup">
+                <div class="popup__tabs">
+                    <button class="tabs__btn">Sign Up</button>
+                    <button class="tabs__btn active">Log in</button>
+                </div>
+                <form action="" class="popup__form active">
+                    <h2 class="form__title">Welcome Back!</h2>
+                    <div class="form__fills">
+                        <div class="form__fill">
+                            <label for="email" class="fill__label">
+                                Email Address <span>*</span></label>
+                            <input type="email" class="fill__inp" id="email" required>
+                        </div>
+                        <div class="form__fill">
+                            <label for="password" class="fill__label">
+                                Password <span>*</span></label>
+                            <input type="password" class="fill__inp" id="password" required>
+                        </div>
+                    </div>
+                    <a href="#" class="form__forgot">Forgot Password?</a>
+                    <input class="form__submit" type="submit" value="Log in">
+                </form>
+                <form action="" class="popup__form">
+                    <h2 class="form__title">Sign Up for Free</h2>
+                    <div class="form__fills">
+                        <div class="fills__names">
+                            <div class="names__fill">
+                                <label for="fName" class="fill__label">
+                                    First Name <span>*</span></label>
+                                <input type="text" class="fill__inp" id="fName" required>
+                            </div>
+                            <div class="names__fill">
+                                <label for="sName" class="fill__label">
+                                    Second Name <span>*</span></label>
+                                <input type="text" class="fill__inp" id="sName" required>
+                            </div>
+                        </div>
+                        <div class="form__fill">
+                            <label for="newEmail" class="fill__label">
+                                Email Address <span>*</span></label>
+                            <input type="email" class="fill__inp" id="newEmail" required>
+                        </div>
+                        <div class="form__fill">
+                            <label for="newPassword" class="fill__label">
+                                Set A Password <span>*</span></label>
+                            <input type="password" class="fill__inp" id="newPassword" required>
+                        </div>
+                        <input class="form__submit" type="submit" value="Get Started">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-popup {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.popup__bg {
+    position: fixed;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.popup__bg.active {
+    scale: 1;
+    opacity: 1;
+    transition: 500ms;
+}
+
+.popup {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    max-width: 674px;
+    margin: 10px auto;
+    background-color: #25333C;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    scale: 0;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.popup.active {
+    scale: 1;
+    opacity: 1;
+    transition: 500ms;
+}
+
+.popup__tabs {
+    width: 100%;
+    display: flex;
+}
+
+.tabs__btn {
+    width: 50%;
+    background-color: #44535A;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.tabs__btn.active {
+    background-color: #1AB188;
+}
+
+.popup__form {
+    display: none;
+    flex-direction: column;
+}
+
+.popup__form.active {
+    display: flex;
+}
+
+.form__title {
+    color: white;
+    text-align: center;
+    padding: 41px 0;
+    margin: 0;
+    letter-spacing: -2px;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.form__fills {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.form__fill {
+    position: relative;
+}
+
+.fill__label {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    left: 15px;
+    top: 4px;
+    cursor: text;
+}
+
+.fill__label span {
+    color: #1AB188;
+    cursor: text;
+}
+
+.fill__inp {
+    width: 100%;
+    height: 42px;
+    background: transparent;
+    border: 1px solid #A2B1B8;
+    padding: 14px;
+    color: white;
+    font-size: 24px;
+}
+
+.fill__inp:focus {
+    outline: none;
+    border-color: #1AB188;
+}
+
+.form__forgot {
+    text-decoration: none;
+    margin: 18px 0;
+    color: #1AB188;
+    align-self: flex-end;
+}
+
+.form__forgot:hover {
+    text-decoration: underline;
+}
+
+.form__submit {
+    background-color: #1AB188;
+    border: none;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 13px;
+    letter-spacing: 4.5px;
+    cursor: pointer;
+}
+
+.fills__names {
+    display: flex;
+    gap: 25px;
+}
+
+.names__fill {
+    position: relative;
+}
+
+@media screen and (max-width: 530px) {
+    .fills__names {
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+
+    .names__fill {
+        flex-basis: 100%;
+    }
+}
