@@ -1,0 +1,123 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    background: repeat center / 200px 200px;
+    background-image:
+        repeating-linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 25%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.4) 50%),
+        url(./images/grass.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    height: 24px;
+    width: 24px;
+    background: transparent;
+    border: 4px dashed white;
+}
+
+.fullscreen:hover {
+    height: 30px;
+    width: 30px;
+    top: 21px;
+    right: 21px;
+    border: 6px dashed white;
+}
+
+.count {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 24px;
+    text-shadow: 0px 0px 20px black;
+}
+
+.field__container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: calc(100% - 88px);
+}
+
+.field {
+    background-image: url(./images/field.svg);
+    background-size: 100%;
+    width: 100vw;
+    max-width: calc((100vh - 88px) / (684 / 452));
+    max-height: calc(100vh - 88px);
+    aspect-ratio: 1 / calc(684 / 452);
+    position: relative;
+}
+
+.left-frame,
+.right-frame {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    height: 15%;
+    width: 54%;
+}
+
+.left-frame {
+    top: 3%;
+}
+
+.right-frame {
+    bottom: 3%;
+}
+
+.ball {
+    background-image: url(./images/ball.svg);
+    background-size: cover;
+    background-position: center;
+    height: 5vmax;
+    width: 5vmax;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px black;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@media (orientation: landscape) {
+    .wrapper {
+        background-image: repeating-linear-gradient(to right,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2) 25%,
+                rgba(0, 0, 0, 0.4) 25%,
+                rgba(0, 0, 0, 0.4) 50%),
+            url(./images/grass.jpg);
+    }
+
+    .field__container {
+        transform: rotate(90deg);
+    }
+
+    .field {
+        width: auto;
+        height: 100vw;
+        max-height: calc((100vh - 88px) * (684 / 452));
+        max-width: calc(100vh - 88px);
+    }
+}
