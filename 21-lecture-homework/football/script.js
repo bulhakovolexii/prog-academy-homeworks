@@ -27,7 +27,7 @@ function leftGoal() {
     countLeft++;
     count.innerHTML = countLeft + ':' + countRight;
     ball.style.left = '50%';
-    ball.style.top = '5vmax';
+    ball.style.top = '5%';
     ball.style.bottom = 'unset';
 }
 
