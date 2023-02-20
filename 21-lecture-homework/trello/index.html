@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="project-name" contenteditable="true"></h1>
+        <p class="project-goal" contenteditable="true"></p>
+        <div class="board">
+            <div class="board__column column">
+                <div class="column__name" contenteditable="true"></div>
+                <div class="column__card card" draggable="true">
+                    <div class="card__name" contenteditable="true"></div>
+                    <div class="card__descr" contenteditable="true"></div>
+                    <select class="card__priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="High">High</option>
+                        <option value="Critical">Critical</option>
+                    </select>
+                </div>
+                <button class="column__add-card">+</button>
+            </div>
+            <button class="board__add-column">+</button>
+        </div>
+    </div>
+    <script src=" main.js">
+    </script>
+</body>
+
+</html>

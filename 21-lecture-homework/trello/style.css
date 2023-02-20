@@ -1,0 +1,231 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 39px 75px;
+}
+
+.project-name {
+    color: #3B3b3B;
+    font-size: 48px;
+    margin: 0px 0px 18px 0px;
+    cursor: text;
+    align-self: flex-start;
+    outline: none;
+}
+
+.project-name:empty::after {
+    content: 'Project Name...';
+}
+
+.project-goal {
+    color: #3B3B3B;
+    font-size: 30px;
+    margin: 0px 0px 75px 0px;
+    cursor: text;
+    align-self: flex-start;
+    outline: none;
+}
+
+.project-goal:empty::after {
+    content: 'Goal of the board...';
+}
+
+.board {
+    flex: 1 auto;
+    display: flex;
+    overflow-x: auto;
+    padding: 7.5px;
+    gap: 7.5px;
+}
+
+.column {
+    flex-shrink: 0;
+    background-color: #F3F5F6;
+    width: 317.25px;
+    min-height: 100%;
+    padding: 18.75px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column__name {
+    align-self: flex-start;
+    color: #313131;
+    font-size: 21px;
+    font-weight: 600;
+    outline: none;
+    cursor: text;
+}
+
+.column__name:empty::after {
+    content: 'State...';
+}
+
+.column__add-card {
+    align-self: center;
+    padding: 0;
+    font-size: 32px;
+    line-height: 28px;
+    width: 28px;
+    border: none;
+    border-radius: 50%;
+    background: inherit;
+    cursor: pointer;
+    opacity: 0;
+    order: 1;
+}
+
+.column__add-card:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.column__add-card:active {
+    outline: 2px solid black;
+}
+
+.column__add-card:focus-visible {
+    opacity: 1 !important;
+    outline: 2px solid black;
+}
+
+.column:hover>.column__add-card {
+    opacity: 1;
+}
+
+.card:hover~.column__add-card {
+    opacity: 0;
+}
+
+.board__add-column {
+    align-self: flex-start;
+    flex-shrink: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 28px;
+    width: 28px;
+    border: none;
+    border-radius: 50%;
+    background: inherit;
+    cursor: pointer;
+    opacity: 0;
+    order: 1;
+    text-shadow: 0px 0px 10px white;
+}
+
+.board__add-column:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.board__add-column:active {
+    outline: 2px solid black;
+}
+
+.board__add-column:focus-visible {
+    opacity: 1 !important;
+    outline: 2px solid black;
+    background-color: #fff;
+}
+
+.board:hover>.board__add-column {
+    opacity: 1;
+}
+
+.column:hover~.board__add-column {
+    opacity: 0;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 9px;
+    box-shadow: 0px 7.5px 0px rgba(0, 0, 0, 0.15);
+    cursor: grab;
+}
+
+
+.card__name {
+    color: #363636;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 7.5px;
+    outline: none;
+    cursor: text;
+}
+
+.card__name:empty::after {
+    content: 'TASK TITLE';
+}
+
+.card__descr {
+    color: #363636;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    outline: none;
+    cursor: text;
+}
+
+.card__descr:empty::after {
+    content: 'Task Description';
+}
+
+.card__priority {
+    color: #323232;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6.75px;
+    padding: 6px 15px;
+    outline: none;
+    appearance: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card__priority:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__priority:active {
+    outline: 2px solid black;
+}
+
+.card__priority:focus-visible {
+    outline: 2px solid black;
+}
+
+.card__priority>option {
+    background-color: #fff;
+}
+
+.card__priority:has(>option:nth-child(1):checked) {
+    background-color: #D6D6D6;
+}
+
+.card__priority:has(>option:nth-child(2):checked) {
+    background-color: #FFED8F;
+}
+
+.card__priority:has(>option:nth-child(3):checked) {
+    background-color: #FFC48D;
+}
+
+.card__priority:has(>option:nth-child(4):checked) {
+    background-color: #FFB9B9;
+}
