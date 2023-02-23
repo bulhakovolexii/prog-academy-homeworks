@@ -8,7 +8,7 @@
 
     <style>
         .regionName {
-            font-size: 20px;
+            font-size: 18px;
             position: absolute;
             color: white;
             text-shadow: 0px 0px 5px black;
@@ -169,24 +169,28 @@
     <script>
         const regions = document.querySelectorAll('path[data-region]');
         for (let i = 0; i < regions.length; i++) {
-            regions[i].addEventListener('mouseenter', addRegionName);
-            regions[i].addEventListener('mouseleave', removeRegionName);
+            regions[i].addEventListener('mouseover', addRegionName);
+            regions[i].addEventListener('mouseout', removeRegionName);
         }
 
-        function addRegionName() {
-            const regionName = document.createElement('div');
-            regionName.innerText = this.getAttribute('data-region');
-            regionName.classList.add('regionName');
-            regionName.style.top = this.nextElementSibling.getAttribute('cy') + 'px';
-            regionName.style.left = this.nextElementSibling.getAttribute('cx') + 'px';
-            document.body.appendChild(regionName);
-            this.setAttribute('stroke-opacity', 1);
+        const regionName = document.createElement('div');
+        regionName.classList.add('regionName');
+        document.body.appendChild(regionName);
+
+        function addRegionName(e) {
+            if (e.target !== regionName) {
+                regionName.innerText = this.getAttribute('data-region');
+                regionName.style.top = (+this.nextElementSibling.getAttribute('cy') - 4) + 'px';
+                regionName.style.left = (+this.nextElementSibling.getAttribute('cx') + 18) + 'px';
+                this.setAttribute('stroke-opacity', 1);
+            }
         }
 
-        function removeRegionName() {
-            const regionName = document.querySelector('.regionName');
-            document.body.removeChild(regionName);
-            this.setAttribute('stroke-opacity', 0.25);
+        function removeRegionName(e) {
+            if (e.relatedTarget !== regionName) {
+                regionName.innerHTML = '';
+                this.setAttribute('stroke-opacity', 0.25);
+            }
         }
     </script>
 </body>
