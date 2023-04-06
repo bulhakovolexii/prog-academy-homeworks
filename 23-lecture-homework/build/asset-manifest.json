@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/23-lecture-homework/static/css/main.80674da2.css",
+    "main.js": "/23-lecture-homework/static/js/main.87f6d478.js",
+    "index.html": "/23-lecture-homework/index.html",
+    "main.80674da2.css.map": "/23-lecture-homework/static/css/main.80674da2.css.map",
+    "main.87f6d478.js.map": "/23-lecture-homework/static/js/main.87f6d478.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80674da2.css",
+    "static/js/main.87f6d478.js"
+  ]
+}

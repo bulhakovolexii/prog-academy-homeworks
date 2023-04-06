@@ -1,0 +1,23 @@
+.card {
+    color: wheat;
+    min-height: 400px;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 0px 20px rgba(245, 222, 179, 0.2);
+    border: 4px solid wheat;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.card__link {
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.card__link:hover,
+.card__link:focus {
+    outline: 4px solid wheat;
+    outline-offset: 2px;
+}
