@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-heroes-cards/static/css/main.7fb5e2dc.css",
-    "main.js": "/react-heroes-cards/static/js/main.a3a04c78.js",
-    "static/media/r2-d2.webp": "/react-heroes-cards/static/media/r2-d2.7876abae097e34f60183.webp",
-    "static/media/r5-d4.webp": "/react-heroes-cards/static/media/r5-d4.810c71992b81af3af2e0.webp",
-    "static/media/c-3po.webp": "/react-heroes-cards/static/media/c-3po.a64922f4b5d4cd177dc7.webp",
-    "static/media/biggs-darklighter.webp": "/react-heroes-cards/static/media/biggs-darklighter.d852911f5fbc0daae1a5.webp",
-    "static/media/beru-whitesun-lars.webp": "/react-heroes-cards/static/media/beru-whitesun-lars.db1aa3e1ef7ff0d43b13.webp",
-    "static/media/dart-vader.webp": "/react-heroes-cards/static/media/dart-vader.c19e36da3c495e8ebcd2.webp",
-    "static/media/leia-organa.webp": "/react-heroes-cards/static/media/leia-organa.d5dfd3e35789548a86e5.webp",
-    "static/media/obi-wan-kenobi.webp": "/react-heroes-cards/static/media/obi-wan-kenobi.885af0e36ef2660740b7.webp",
-    "static/media/luke-skywalker.webp": "/react-heroes-cards/static/media/luke-skywalker.3799d0d8580ac466296a.webp",
-    "static/media/owen-lars.webp": "/react-heroes-cards/static/media/owen-lars.a6168856058ced7f64c3.webp",
-    "index.html": "/react-heroes-cards/index.html",
-    "main.7fb5e2dc.css.map": "/react-heroes-cards/static/css/main.7fb5e2dc.css.map",
-    "main.a3a04c78.js.map": "/react-heroes-cards/static/js/main.a3a04c78.js.map"
+    "main.css": "./static/css/main.7fb5e2dc.css",
+    "main.js": "./static/js/main.f7720686.js",
+    "static/media/r2-d2.webp": "./static/media/r2-d2.7876abae097e34f60183.webp",
+    "static/media/r5-d4.webp": "./static/media/r5-d4.810c71992b81af3af2e0.webp",
+    "static/media/c-3po.webp": "./static/media/c-3po.a64922f4b5d4cd177dc7.webp",
+    "static/media/biggs-darklighter.webp": "./static/media/biggs-darklighter.d852911f5fbc0daae1a5.webp",
+    "static/media/beru-whitesun-lars.webp": "./static/media/beru-whitesun-lars.db1aa3e1ef7ff0d43b13.webp",
+    "static/media/dart-vader.webp": "./static/media/dart-vader.c19e36da3c495e8ebcd2.webp",
+    "static/media/leia-organa.webp": "./static/media/leia-organa.d5dfd3e35789548a86e5.webp",
+    "static/media/obi-wan-kenobi.webp": "./static/media/obi-wan-kenobi.885af0e36ef2660740b7.webp",
+    "static/media/luke-skywalker.webp": "./static/media/luke-skywalker.3799d0d8580ac466296a.webp",
+    "static/media/owen-lars.webp": "./static/media/owen-lars.a6168856058ced7f64c3.webp",
+    "index.html": "./index.html",
+    "main.7fb5e2dc.css.map": "./static/css/main.7fb5e2dc.css.map",
+    "main.f7720686.js.map": "./static/js/main.f7720686.js.map"
   },
   "entrypoints": [
     "static/css/main.7fb5e2dc.css",
-    "static/js/main.a3a04c78.js"
+    "static/js/main.f7720686.js"
   ]
 }
