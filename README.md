@@ -153,7 +153,7 @@
 ### 24 Lecture - "Star Wars" application
 
 - Start of development of the Star Wars app.
-    - Output character cards using swapi.dev
-    - Each card must have a title and an image
-    - Each card must contain a link that opens in a new tab
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw23/build/) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw23/)
+      - Output character cards using swapi.dev
+      - Each card must have a title and an image
+      - Each card must contain a link that opens in a new tab
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw24/build/) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw24/)
