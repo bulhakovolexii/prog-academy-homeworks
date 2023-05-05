@@ -1,7 +1,7 @@
 {
   "name": "24-lecture-homework",
   "version": "0.1.0",
-  "homepage": "./hw24/build",
+  "homepage": "./build",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
