@@ -9,20 +9,20 @@
 ### 1 Lecture - Introduction in HTML
 
 - Task 1 - Formulas for the properties of degrees
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw01/task1.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw01/task1.html) 
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw01/task1.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/blob/main/hw01/task1.html) 
 - Task 2 -  Quotes
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw01/task2.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw01/task2.html)
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw01/task2.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/blob/main/hw01/task2.html)
 - Task 3 - Сontents
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw01/task3.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw01/task3.html)
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw01/task3.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/blob/main/hw01/task3.html)
 
 ### 2 Lecture - Work with graphic
 
 - Task 1 - Anchor to top of page.
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw02/task1.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw02/task1.html)
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw02/task1.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/blob/main/hw02/task1.html)
 - Task 2 - Background without scaling
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw02/task2.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw02/task2.html)
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw02/task2.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/blob/main/hw02/task2.html)
 - Task 3 - Background with scaling
-  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw02/task3.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/tree/main/hw02/task3.html)
+  - [demo](https://bulhakovolexii.github.io/prog-academy-homeworks/hw02/task3.html) / [code base](https://github.com/bulhakovolexii/prog-academy-homeworks/blob/main/hw02/task3.html)
 
 ### 3 Lecture - Div, selectors, banner
 
