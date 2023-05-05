@@ -1,7 +1,7 @@
 {
   "name": "23-lecture-homework",
   "version": "0.1.0",
-  "homepage": "https://bulhakov.dev/prog-academy-homeworks/23-lecture-homework/build/",
+  "homepage": "./hw23/build",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
